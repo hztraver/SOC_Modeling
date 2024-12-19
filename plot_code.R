@@ -7,7 +7,7 @@ library(factoextra) ; library(FactoMineR) ; library(cluster); library(ggplot2); 
 cluster.data = read.csv("Code & Data/01_transect_clusters.csv")
 
 # scale variables for clustering
-cvars = dt.t[, 2:10]
+cvars = cluster.data[, 2:10]
 cvars = scale(cvars)
 row.names(cvars) = cluster.data$transect
 
